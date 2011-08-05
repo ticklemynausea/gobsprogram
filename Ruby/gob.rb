@@ -1,11 +1,11 @@
 def gobsprogram
-  puts "Gob's program? y/n"
-  op = gets
+  puts "Gob's program: Y/N?"
+  print "? "
 
-  return unless op =~ /^y/
+  return unless gets =~ /^y/
 
   while true
-    print "PENUS "
+    print "Penus "
     sleep 0.01
   end
 end
