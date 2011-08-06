@@ -1,0 +1,38 @@
+body {
+  padding: 20px;
+  background: #000;
+  font: 100%/100% normal bold "Courier New", Courier, monospace;
+  color: #0f0;
+}
+body * { font-family: "Courier New", Courier, monospace; }
+
+input {
+  border: none;
+  background: #000;
+  color: #0f0;
+  padding: 0;
+  margin: 0;
+  font: 100%/100% normal bold "Courier New", Courier, monospace;
+}
+
+@-webkit-keyframes blink {
+  0%   { background: #000; color: #0f0; }
+  50%  { background: #000; color: #0f0; }
+  51%  { background: #0f0; color: #000; }
+}
+@-moz-keyframes blink {
+  0%   { background: #000; color: #0f0; }
+  50%  { background: #000; color: #0f0; }
+  51%  { background: #0f0; color: #000; }
+}
+
+input:focus {
+  display: inline-block;
+  background: #0f0;
+  color: #000;
+  outline: none;
+
+  -webkit-animation : blink 1s infinite linear;
+  -moz-animation    : blink 1s infinite linear;
+  animation         : blink 1s infinite linear;
+}
