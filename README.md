@@ -7,4 +7,7 @@ language, one at a time.
 API
 ---
 
-All the API and implementation notes you may ever need are here: http://cl.ly/9452
+All the API and implementation notes you may ever need:
+
+- http://cl.ly/9452 (short RFC)
+- http://www.youtube.com/watch?v=JbnjusltDHk (complete RFC)
