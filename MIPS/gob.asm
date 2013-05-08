@@ -1,5 +1,5 @@
 .data 
-op: 		.space 3
+op: .space 3
 query: .asciiz "Gob's Program (y/n)?\n"
 penus:	.asciiz	"Penus "
 
@@ -10,7 +10,7 @@ __start:
 
 	la $a0, query
 	li $v0, 4
-	syscall 
+	syscall
 
 	la $a0, op
 	li $a1, 3
@@ -20,13 +20,13 @@ __start:
 	lb $t9, op
 	beq $t9, 'y', gob
 	j end
-	
+
 gob:
 	la $a0, penus
 	li $v0, 4
-	syscall 
+	syscall
 	j gob
 
-end:	
+end:
 	li $v0, 10
 	syscall
