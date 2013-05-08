@@ -1,6 +1,6 @@
 .data 
 op: .space 3
-query: .asciiz "Gob's Program (y/n)?\n"
+query: .asciiz "Gob's Program: Y/N?\n?"
 penus:	.asciiz	"Penus "
 
 .text
