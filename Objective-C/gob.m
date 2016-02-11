@@ -9,7 +9,7 @@ int main(int argc, char *argv[]) {
 		
 		NSString *responseString = [NSString stringWithFormat:@"%c", responseChar];
 		
-		if (!([responseString isEqualToString:@"Y"] || [responseString isEqualToString:@"y"])) {
+		if (![[responseString uppercaseString] isEqualToString:@"Y"]) {
 			return 0;
 		}
 		
