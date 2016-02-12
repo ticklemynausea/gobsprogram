@@ -1,0 +1,6 @@
+10 PRINT "Gob's Program: Y/N?"
+20 INPUT A$
+30 IF A$ = "Y" THEN GOTO 50
+40 END
+50 PRINT "Penus ";
+60 GOTO 50
